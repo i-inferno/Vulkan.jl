@@ -12,6 +12,6 @@
 
 *Core function*: Julia function defined in [VulkanCore.jl](https://github.com/JuliaGPU/VulkanCore.jl) which [forwards a call](https://docs.julialang.org/en/v1/base/c/#ccall) to the Vulkan API function of the same name.
 
-*Intermediate function*: Wrapper around a core function meant to automate certain C anv Vulkan patterns. May return handles and intermediate structures, wrapped in a `ResultTypes.Result` if the core function may fail.
+*Intermediate function*: Wrapper around a core function meant to automate certain C and Vulkan patterns. May return handles and intermediate structures, wrapped in a `ResultTypes.Result` if the core function may fail.
 
 *High-level function*: Almost identical to an intermediate function, except that all returned structures are high-level structures.
